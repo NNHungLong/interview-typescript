@@ -8,7 +8,7 @@
 ## Installation
 
 ```
-git clone git@gitlab.com:skaleet/poc/recruitment-test-typescript.git interview
+git clone git@gitlab.com:skaleet-public/interview/interview-typescript.git
 cd interview
 ```
 

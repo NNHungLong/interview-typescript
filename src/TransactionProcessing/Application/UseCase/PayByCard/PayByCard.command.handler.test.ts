@@ -48,7 +48,10 @@ describe('Exercice #1', () => {
         payByCardCommandHandler = new PayByCardCommandHandler(database as TransactionRepository, database as AccountRepository);
     });
 
-    describe('test me', () => {
-        expect(null).toBeNull();
+    describe('PayByCardCommandHandlerTest', () => {
+        it('test me', () => {
+            //A toi de jouer
+            expect(null).toBeNull();
+        });
     });
 });
