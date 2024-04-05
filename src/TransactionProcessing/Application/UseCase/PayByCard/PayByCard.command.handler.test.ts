@@ -45,6 +45,8 @@ describe('Exercice #1', () => {
                 new AccountEntry(CLIENT_USD, new Amount(75_00, 'USD'), new Amount(75_00, 'USD')),
             ]),
         ]);
+        transactionRepository = database;
+        accountRepository = database;
         payByCardCommandHandler = new PayByCardCommandHandler(database as TransactionRepository, database as AccountRepository);
     });
 

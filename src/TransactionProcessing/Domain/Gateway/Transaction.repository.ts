@@ -1,5 +1,5 @@
 import { TransactionLog } from "../Model/TransactionLog";
 
 export interface TransactionRepository {
-    save(transaction: TransactionLog): void
+    saveTransaction(transaction: TransactionLog): void
 }
