@@ -52,6 +52,7 @@ describe('Exercice #1', () => {
 
     describe('PayByCardCommandHandlerTest', () => {
         it('test me', () => {
+            //write your test
             //A toi de jouer
             expect(null).toBeNull();
         });

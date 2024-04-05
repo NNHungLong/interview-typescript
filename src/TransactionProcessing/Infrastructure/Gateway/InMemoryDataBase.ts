@@ -2,7 +2,7 @@ import { AccountRepository } from "../../Domain/Gateway/Account.repository";
 import { TransactionRepository } from "../../Domain/Gateway/Transaction.repository";
 import { Account } from "../../Domain/Model/Account";
 import { TransactionLog } from "../../Domain/Model/TransactionLog";
-import { cloneDeep } from '@types/lodash';
+import { cloneDeep } from 'lodash';
 
 
 export class InMemoryDataBase implements AccountRepository, TransactionRepository {
@@ -20,7 +20,7 @@ export class InMemoryDataBase implements AccountRepository, TransactionRepositor
 
     loadByNumber(accountNumber: string): Account | null {
         if (this.accounts.get(accountNumber)) {
-            cloneDeep(this.accounts.get(accountNumber))
+            return cloneDeep(this.accounts.get(accountNumber))
         }
         return null;
     }
