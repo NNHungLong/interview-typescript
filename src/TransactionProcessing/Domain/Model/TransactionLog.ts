@@ -1,10 +1,9 @@
-import { AccountEntry } from "./AccountEntry";
+import { AccountEntry } from './AccountEntry';
 
 export class TransactionLog {
-    constructor(
-        public id         : string,
-        public date       : Date,
-        public accounting : AccountEntry[],
-    ) {
-    }
+  constructor(
+    public id: string,
+    public date: Date,
+    public accounting: AccountEntry[]
+  ) {}
 }
